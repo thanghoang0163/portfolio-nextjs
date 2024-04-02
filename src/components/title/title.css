@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .title-container {
+    @apply flex items-center;
+  }
+
+  .title {
+    @apply ml-3 text-3xl font-semibold;
+  }
+}

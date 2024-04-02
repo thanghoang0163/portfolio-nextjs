@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .general-content {
+    @apply rounded-primary-border-radius ml-8 w-[70%] bg-white px-20 py-12;
+  }
+
+  .general-content-header {
+    @apply flex items-center;
+  }
+
+  .general-content-title {
+    @apply text-5xl uppercase;
+  }
+
+  .general-content-line {
+    @apply ml-12 h-[0.2rem] w-[50%] bg-primary-gradient;
+  }
+}

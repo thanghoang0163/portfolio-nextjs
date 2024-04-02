@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .category {
+    @apply flex rounded-primary-border-radius border-[0.2rem] border-[#dddddd] px-12 py-4 shadow-primary-shadow;
+  }
+
+  .category-item {
+    @apply bg-light-blue mr-8 flex w-[10rem] cursor-pointer flex-col items-center rounded-primary-border-radius p-8 last:mr-0;
+  }
+
+  .category-item i {
+    @apply mb-2 text-4xl text-blur-text-color;
+  }
+
+  .category-item--activated {
+    @apply bg-primary-gradient text-white;
+  }
+
+  .category-item--activated i {
+    @apply text-white;
+  }
+}

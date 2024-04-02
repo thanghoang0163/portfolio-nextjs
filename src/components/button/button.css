@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .button {
+    @apply rounded-primary-border-radius flex items-center justify-center bg-primary-gradient px-8 py-4 text-white;
+  }
+
+  .button-text {
+    @apply flex-1 whitespace-nowrap text-center text-white;
+  }
+}

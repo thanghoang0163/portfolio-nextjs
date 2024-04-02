@@ -1,0 +1,43 @@
+@tailwind components;
+
+@layer components {
+  .info-section {
+    @apply rounded-primary-border-radius w-full bg-dark-white px-16;
+  }
+
+  .info-section-item {
+    @apply flex items-center border-b-[0.1rem] border-b-border-color py-8 last:border-none;
+  }
+
+  .info-section-item i {
+    @apply text-3xl;
+  }
+
+  .info-section-item:first-child i {
+    @apply bg-primary-gradient bg-clip-text text-transparent;
+  }
+
+  .info-section-item:nth-child(2) i {
+    @apply text-[#FF9C1B];
+  }
+
+  .info-section-item:nth-child(3) i {
+    @apply text-red;
+  }
+
+  .info-text-container {
+    @apply ml-8 flex flex-col;
+  }
+
+  .info-title {
+    @apply text-blur-text-color;
+  }
+
+  .info-download-btn {
+    @apply px-8 py-4;
+  }
+
+  .info-download-btn i {
+    @apply mr-4;
+  }
+}

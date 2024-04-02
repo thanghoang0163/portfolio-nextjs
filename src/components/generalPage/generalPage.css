@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components {
+  .general-page {
+    @apply p-16;
+  }
+
+  .general-page-header {
+    @apply flex items-center justify-between;
+  }
+
+  .general-page-theme-btn {
+    @apply h-[5rem] w-[5rem] rounded-full border-[0.2rem] border-[#dddddd] bg-none text-4xl text-black shadow-primary-shadow;
+  }
+
+  .general-page-theme-btn i {
+    @apply bg-primary-gradient bg-clip-text text-transparent;
+  }
+
+  .general-page-content {
+    @apply mt-[3rem] flex flex-col items-end;
+  }
+
+  .general-page-detail {
+    @apply mt-[2rem] flex justify-between self-stretch;
+  }
+}

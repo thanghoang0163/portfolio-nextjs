@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+  .input-container {
+    @apply flex w-full flex-col;
+  }
+
+  .input {
+    @apply flex items-center border-b-[0.1rem] border-b-[#B5B5B5] bg-transparent pr-4 text-blur-text-color outline-none placeholder:text-2xl;
+  }
+}
