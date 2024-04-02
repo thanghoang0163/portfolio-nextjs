@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "normalize.css";
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+  --orange: #ff9c1a;
+  --red: #ec1b09;
+  --dark-white: #f2f5f9;
+  --activate-white: #eaeef2;
+  --light-blue: #e1e8ef;
+  --light-orange: #ffebd1;
+  --blur-text: rgba(26, 16, 3, 0.5);
+  --border: #e3e3e3;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer base {
+  * {
+    @apply box-border;
+    -webkit-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+  }
+
+  html {
+    @apply text-[62.5%];
+  }
+
+  body {
+    @apply text-2xl;
+  }
+
+  ul {
+    @apply m-0 list-none p-0;
+  }
+
+  span {
+    @apply inline-block;
+  }
+
+  .general-title {
+    @apply text-4xl font-semibold;
+  }
+
+  /* Scroll Bar*/
+  html *::-webkit-scrollbar {
+    @apply w-4;
+  }
+
+  /* Handle */
+  html *::-webkit-scrollbar-thumb {
+    @apply rounded-[1rem] bg-[#d1d3d6] hover:bg-slate-500;
+  }
+}
