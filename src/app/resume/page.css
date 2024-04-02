@@ -1,0 +1,35 @@
+@tailwind components;
+
+@layer components {
+  .resume-list {
+    @apply grid grid-cols-2 gap-8;
+  }
+
+  .experience-list {
+    @apply my-16;
+  }
+
+  .experience-list ul {
+    @apply flex flex-col;
+  }
+
+  .experience-item {
+    @apply bg-light-orange my-4 flex flex-col rounded-primary-border-radius p-8;
+  }
+
+  .experience-item span {
+    @apply first:text-blur-text-color [&:nth-child(2)]:my-3;
+  }
+
+  .skill-title {
+    @apply mb-4 text-3xl font-semibold;
+  }
+
+  .skill-list {
+    @apply flex flex-wrap;
+  }
+
+  .skill-item {
+    @apply bg-light-blue mb-6 mr-6 whitespace-nowrap rounded-primary-border-radius px-4 py-2;
+  }
+}
