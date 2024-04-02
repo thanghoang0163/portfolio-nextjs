@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .work-list {
+    @apply flex flex-wrap items-start justify-between;
+  }
+
+  .work-item {
+    @apply bg-light-orange mb-8 flex w-[48%] flex-col rounded-primary-border-radius p-4;
+  }
+
+  .work-image {
+    @apply rounded-[1rem];
+  }
+
+  .work-title {
+    @apply my-2 text-blur-text-color;
+  }
+}
