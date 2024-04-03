@@ -1,9 +1,12 @@
 import clsx from "clsx";
-import Script from "next/script";
 import { Poppins } from "next/font/google";
 import { AOSInit } from "~/utils/aos";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
 import "~/styles/generalStyles.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+
+config.autoAddCss = false;
 
 const poppins = Poppins({ subsets: ["latin"], weight: "500" });
 
@@ -15,10 +18,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script
-        src="https://kit.fontawesome.com/0904eaacfa.js"
-        crossOrigin="anonymous"
-      ></Script>
       <AOSInit />
       <body
         className={clsx("bg-dark-white", poppins.className)}

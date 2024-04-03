@@ -2,22 +2,22 @@
 
 @layer components {
   .left-side {
-    @apply rounded-primary-border-radius relative flex max-w-[30%] flex-col items-center bg-white px-12 py-20;
+    @apply relative flex max-w-[30%] flex-col items-center rounded-primary-border-radius bg-white px-12 py-20;
   }
 
-  .left-side-avatar {
-    @apply rounded-primary-border-radius absolute top-[-20%] h-[20rem] w-[20rem];
+  .left-side__avatar {
+    @apply absolute top-[-18%] h-[20rem] w-[20rem] rounded-primary-border-radius;
   }
 
-  .left-side-text-container {
+  .left-side__text-container {
     @apply mt-20 flex flex-col items-center;
   }
 
-  .left-side-name {
+  .left-side__name {
     @apply text-4xl font-semibold;
   }
 
-  .left-side-text {
+  .left-side__text {
     @apply mt-6 text-blur-text-color;
   }
 }

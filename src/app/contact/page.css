@@ -1,39 +1,39 @@
 @tailwind components;
 
 @layer components {
-  .contact-list {
+  .contact__list {
     @apply my-8 grid grid-cols-2 gap-12;
   }
 
-  .contact-item {
+  .contact__item {
     @apply flex flex-col rounded-primary-border-radius p-16 first:bg-light-orange last:bg-light-blue;
   }
 
-  .contact-title {
+  .contact__title {
     @apply mb-4;
   }
 
-  .contact-text {
+  .contact__text {
     @apply ml-12;
   }
 
-  .contact-input-container {
+  .contact__input-container {
     @apply rounded-primary-border-radius bg-[#F8FBFB] p-16;
   }
 
-  .contact-big-text span {
-    @apply font-semibold;
+  .contact__big-text span {
+    @apply inline font-semibold;
   }
 
-  .contact-input {
+  .contact__input {
     @apply mt-8;
   }
 
-  .contact-submit-btn {
+  .contact__input-container .contact__submit-btn {
     @apply mt-8 border-[0.1rem] border-orange bg-none px-10;
   }
 
-  .contact-submit-btn span {
+  .contact__submit-btn span {
     @apply text-black;
   }
 }

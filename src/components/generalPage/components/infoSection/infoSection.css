@@ -2,31 +2,28 @@
 
 @layer components {
   .info-section {
-    @apply rounded-primary-border-radius w-full bg-dark-white px-16;
+    @apply w-full rounded-primary-border-radius bg-dark-white px-16;
   }
 
-  .info-section-item {
+  .info-section__item {
     @apply flex items-center border-b-[0.1rem] border-b-border-color py-8 last:border-none;
   }
 
-  .info-section-item i {
+  .info-section__icon {
     @apply text-3xl;
   }
 
-  .info-section-item:first-child i {
-    @apply bg-primary-gradient bg-clip-text text-transparent;
-  }
-
-  .info-section-item:nth-child(2) i {
+  .info-section__item:nth-child(2) .info-section__icon {
     @apply text-[#FF9C1B];
   }
 
-  .info-section-item:nth-child(3) i {
+  .info-section__item:first-child .info-section__icon,
+  .info-section__item:nth-child(3) .info-section__icon {
     @apply text-red;
   }
 
   .info-text-container {
-    @apply ml-8 flex flex-col;
+    @apply ml-6 flex flex-col;
   }
 
   .info-title {
@@ -37,7 +34,7 @@
     @apply px-8 py-4;
   }
 
-  .info-download-btn i {
-    @apply mr-4;
+  .info-download-icon {
+    @apply mr-2 h-[2rem] w-[2rem];
   }
 }

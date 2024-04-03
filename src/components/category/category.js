@@ -1,33 +1,31 @@
 "use client";
 
-import { useState } from "react";
 import clsx from "clsx";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { categories } from "./index";
 
 import "./category.css";
 
 export default function Category() {
-  const [label, setLabel] = useState(categories[0].label);
-
-  const handleClick = (label) => setLabel(label);
+  const pathName = usePathname();
 
   return (
     <ul className="category">
       {categories.map((category, index) => {
-        const Icon = category.icon;
-
         return (
-          <li
+          <Link
             className={clsx(
-              "category-item",
-              label === category.label && "category-item--activated",
+              "category__item",
+              pathName === category.href && "category__item--activated",
             )}
-            onClick={() => handleClick(category.label)}
+            href={category.href}
             key={index}
           >
-            <Icon />
-            <span className="category-label">{category.label}</span>
-          </li>
+            <FontAwesomeIcon className="category__icon" icon={category.icon} />
+            <span className="category__label">{category.label}</span>
+          </Link>
         );
       })}
     </ul>

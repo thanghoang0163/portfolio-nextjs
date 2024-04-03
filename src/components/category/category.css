@@ -5,19 +5,19 @@
     @apply flex rounded-primary-border-radius border-[0.2rem] border-[#dddddd] px-12 py-4 shadow-primary-shadow;
   }
 
-  .category-item {
-    @apply bg-light-blue mr-8 flex w-[10rem] cursor-pointer flex-col items-center rounded-primary-border-radius p-8 last:mr-0;
+  .category__item {
+    @apply mr-8 flex w-[10rem] cursor-pointer flex-col items-center rounded-primary-border-radius bg-light-blue p-8 last:mr-0;
   }
 
-  .category-item i {
-    @apply mb-2 text-4xl text-blur-text-color;
+  .category__icon {
+    @apply mb-2 fill-blur-text-color text-4xl;
   }
 
-  .category-item--activated {
+  .category__item--activated {
     @apply bg-primary-gradient text-white;
   }
 
-  .category-item--activated i {
-    @apply text-white;
+  .category__item--activated .category__icon {
+    @apply fill-white;
   }
 }

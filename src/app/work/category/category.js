@@ -12,12 +12,12 @@ export default function Category() {
   const handleItem = (item) => setItem(item);
 
   return (
-    <ul className="work-category">
+    <ul className="work__category">
       {categories.map((category, index) => (
         <li
           className={clsx(
-            "work-category-item",
-            item === category && "work-category-item--activated",
+            "work__category-item",
+            item === category && "work__category-item--activated",
           )}
           onClick={() => handleItem(category)}
           key={index}

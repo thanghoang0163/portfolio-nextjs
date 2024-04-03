@@ -1,6 +1,8 @@
-export const socialIcons = [
-  () => <i className="fa-brands fa-facebook"></i>,
-  () => <i className="fa-brands fa-linkedin"></i>,
-  () => <i className="fa-brands fa-twitter"></i>,
-  () => <i className="fa-brands fa-github"></i>,
-];
+import {
+  faFacebook,
+  faLinkedinIn,
+  faTwitter,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+
+export const socialIcons = [faFacebook, faLinkedinIn, faTwitter, faGithub];

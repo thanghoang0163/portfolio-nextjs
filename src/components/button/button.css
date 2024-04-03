@@ -2,10 +2,10 @@
 
 @layer components {
   .button {
-    @apply rounded-primary-border-radius flex items-center justify-center bg-primary-gradient px-8 py-4 text-white;
+    @apply flex items-center justify-center rounded-primary-border-radius bg-primary-gradient px-8 py-4 text-white;
   }
 
-  .button-text {
+  .button__text {
     @apply flex-1 whitespace-nowrap text-center text-white;
   }
 }

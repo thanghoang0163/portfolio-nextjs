@@ -1,17 +1,23 @@
+import {
+  faMobileScreen,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+
 export const infos = [
   {
     title: "Phone",
     text: "+84123456789",
-    icon: () => <i className="fa-solid fa-mobile-screen"></i>,
+    icon: faMobileScreen,
   },
   {
     title: "Email",
     text: "abc@gmail.com",
-    icon: () => <i className="fa-regular fa-envelope"></i>,
+    icon: faEnvelope,
   },
   {
     title: "Location",
     text: "Ho Chi Minh, Vietnam",
-    icon: () => <i className="fa-solid fa-location-dot"></i>,
+    icon: faLocationDot,
   },
 ];

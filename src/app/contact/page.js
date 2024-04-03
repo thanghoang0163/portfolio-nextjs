@@ -11,30 +11,30 @@ import "./page.css";
 export default function Resume() {
   return (
     <GeneralPage title={"Contact"}>
-      <ul className="contact-list">
+      <ul className="contact__list">
         {infos.map((info, index) => {
           const Icon = info.icon;
 
           return (
-            <li className="contact-item" key={index}>
-              <Title className="contact-title" title={info.title}>
+            <li className="contact__item" key={index}>
+              <Title className="contact__title" title={info.title}>
                 <Icon />
               </Title>
-              <span className="contact-text">{info.text}</span>
+              <span className="contact__text">{info.text}</span>
             </li>
           );
         })}
       </ul>
-      <div className="contact-input-container">
-        <span className="contact-big-text">
+      <div className="contact__input-container">
+        <span className="contact__big-text">
           I am always open to discussing{" "}
           <span>new projects, opportunities in tech world, partnerships</span>{" "}
           and more so <span>mentorship.</span>
         </span>
-        <Input className="contact-input" title={"Name:"} />
-        <Input className="contact-input" title={"Email:"} />
-        <Input className="contact-input" title={"Message:"} />
-        <Button className="contact-submit-btn" textBtn={"Submit"} />
+        <Input className="contact__input" title={"Name:"} />
+        <Input className="contact__input" title={"Email:"} />
+        <Input className="contact__input" title={"Message:"} />
+        <Button className="contact__submit-btn" textBtn={"Submit"} />
       </div>
     </GeneralPage>
   );

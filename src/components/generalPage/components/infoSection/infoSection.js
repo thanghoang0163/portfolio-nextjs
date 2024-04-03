@@ -1,4 +1,6 @@
 import Button from "~/components/button/button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleDown } from "@fortawesome/free-regular-svg-icons";
 import { infos } from "./index";
 
 import "./infoSection.css";
@@ -7,11 +9,9 @@ export default function InfoSection() {
   return (
     <ul className="info-section">
       {infos.map((info, index) => {
-        const Icon = info.icon;
-
         return (
-          <li className="info-section-item" key={index}>
-            <Icon />
+          <li className="info-section__item" key={index}>
+            <FontAwesomeIcon className="info-section__icon" icon={info.icon} />
             <div className="info-text-container">
               <span className="info-title">{info.title}</span>
               <span className="info-text">{info.text}</span>
@@ -19,9 +19,9 @@ export default function InfoSection() {
           </li>
         );
       })}
-      <li className="info-section-item">
-        <Button className="info-download-btn" textBtn={"Download  Resume"}>
-          <i className="fa-regular fa-circle-down"></i>
+      <li className="info-section__item">
+        <Button className="info-download-btn" textBtn={"Download Resume"}>
+          <FontAwesomeIcon className="info-download-icon" icon={faCircleDown} />
         </Button>
       </li>
     </ul>

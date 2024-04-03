@@ -1,15 +1,15 @@
 @tailwind components;
 
 @layer components {
-  .work-category {
+  .work__category {
     @apply my-8 flex justify-end;
   }
 
-  .work-category-item {
+  .work__category-item {
     @apply ml-8 cursor-pointer;
   }
 
-  .work-category-item--activated {
+  .work__category-item--activated {
     @apply text-red;
   }
 }

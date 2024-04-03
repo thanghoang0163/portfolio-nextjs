@@ -5,23 +5,23 @@
     @apply p-16;
   }
 
-  .general-page-header {
+  .general-page__header {
     @apply flex items-center justify-between;
   }
 
-  .general-page-theme-btn {
+  .general-page__theme-btn {
     @apply h-[5rem] w-[5rem] rounded-full border-[0.2rem] border-[#dddddd] bg-none text-4xl text-black shadow-primary-shadow;
   }
 
-  .general-page-theme-btn i {
+  .general-page__theme-icon {
     @apply bg-primary-gradient bg-clip-text text-transparent;
   }
 
-  .general-page-content {
+  .general-page__content {
     @apply mt-[3rem] flex flex-col items-end;
   }
 
-  .general-page-detail {
-    @apply mt-[2rem] flex justify-between self-stretch;
+  .general-page__detail {
+    @apply mt-[2rem] flex items-start justify-between;
   }
 }

@@ -44,7 +44,7 @@ export default function Button({
     <Comp className={clsx("button", className)} {...props}>
       {children}
       {textBtn && (
-        <span className={clsx("button-text", textStyles)}>{textBtn}</span>
+        <span className={clsx("button__text", textStyles)}>{textBtn}</span>
       )}
     </Comp>
   );

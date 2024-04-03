@@ -1,18 +1,29 @@
+import {
+  faHouseUser,
+  faFile,
+  faBriefcase,
+  faAddressBook,
+} from "@fortawesome/free-solid-svg-icons";
+
 export const categories = [
   {
     label: "Home",
-    icon: () => <i className="fa-solid fa-house-user"></i>,
+    href: "/",
+    icon: faHouseUser,
   },
   {
     label: "Resume",
-    icon: () => <i className="fa-solid fa-file"></i>,
+    href: "/resume",
+    icon: faFile,
   },
   {
     label: "Work",
-    icon: () => <i className="fa-solid fa-briefcase"></i>,
+    href: "/work",
+    icon: faBriefcase,
   },
   {
     label: "Contact",
-    icon: () => <i className="fa-solid fa-address-book"></i>,
+    href: "/contact",
+    icon: faAddressBook,
   },
 ];

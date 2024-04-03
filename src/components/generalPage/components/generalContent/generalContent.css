@@ -2,18 +2,18 @@
 
 @layer components {
   .general-content {
-    @apply rounded-primary-border-radius ml-8 w-[70%] bg-white px-20 py-12;
+    @apply ml-8 rounded-primary-border-radius bg-white p-12;
   }
 
-  .general-content-header {
+  .general-content__header {
     @apply flex items-center;
   }
 
-  .general-content-title {
+  .general-content__title {
     @apply text-5xl uppercase;
   }
 
-  .general-content-line {
+  .general-content__line {
     @apply ml-12 h-[0.2rem] w-[50%] bg-primary-gradient;
   }
 }
