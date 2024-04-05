@@ -6,7 +6,7 @@
   }
 
   .contact__item {
-    @apply flex flex-col rounded-primary-border-radius p-16 first:bg-light-orange last:bg-light-blue;
+    @apply flex flex-col rounded-primary-border-radius p-16 text-black first:bg-light-orange last:bg-light-blue;
   }
 
   .contact__title {
@@ -18,7 +18,7 @@
   }
 
   .contact__input-container {
-    @apply rounded-primary-border-radius bg-[#F8FBFB] p-16;
+    @apply rounded-primary-border-radius bg-[#F8FBFB] p-16 text-black;
   }
 
   .contact__big-text span {

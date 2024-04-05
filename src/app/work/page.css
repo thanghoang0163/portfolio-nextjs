@@ -6,7 +6,7 @@
   }
 
   .work__item {
-    @apply mb-8 flex w-[48%] flex-col rounded-primary-border-radius bg-light-orange p-4;
+    @apply mb-8 flex w-[48%] flex-col rounded-primary-border-radius bg-light-orange p-4 text-black;
   }
 
   .work__image {

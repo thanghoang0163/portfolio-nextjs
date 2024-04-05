@@ -18,7 +18,7 @@
   }
 
   .experience__item span {
-    @apply first:text-blur-text-color [&:nth-child(2)]:my-3;
+    @apply text-black first:text-blur-text-color [&:nth-child(2)]:my-3;
   }
 
   .skill__title {
@@ -30,6 +30,6 @@
   }
 
   .skill__item {
-    @apply mb-6 mr-6 whitespace-nowrap rounded-primary-border-radius bg-light-blue px-4 py-2;
+    @apply mb-6 mr-6 whitespace-nowrap rounded-primary-border-radius bg-light-blue px-4 py-2 text-black;
   }
 }

@@ -42,7 +42,7 @@ export default function GeneralPage({ title, children }) {
           priority={true}
         />
         <Button className="general-page__theme-btn" onClick={handleChangeTheme}>
-          {theme === "light" ? (
+          {theme === "dark" ? (
             <FontAwesomeIcon
               className="general-page__theme-icon"
               icon={faMoon}

@@ -2,7 +2,7 @@
 
 @layer components {
   .general-content {
-    @apply ml-8 rounded-primary-border-radius bg-white p-12;
+    @apply ml-8 rounded-primary-border-radius p-12;
   }
 
   .general-content__header {

@@ -23,7 +23,7 @@
   }
 
   .info-text-container {
-    @apply ml-6 flex flex-col;
+    @apply ml-6 flex flex-col text-black;
   }
 
   .info-title {
