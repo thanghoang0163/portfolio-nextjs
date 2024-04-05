@@ -2,7 +2,7 @@
 
 @layer components {
   .general-page {
-    @apply p-16;
+    @apply bg-dark-white p-16;
   }
 
   .general-page__header {
@@ -14,7 +14,7 @@
   }
 
   .general-page__theme-icon {
-    @apply bg-primary-gradient bg-clip-text text-transparent;
+    @apply text-orange;
   }
 
   .general-page__content {

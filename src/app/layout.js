@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { Poppins } from "next/font/google";
 import { AOSInit } from "~/utils/aos";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -19,10 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AOSInit />
-      <body
-        className={clsx("bg-dark-white", poppins.className)}
-        suppressHydrationWarning={true}
-      >
+      <body className={poppins.className} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>

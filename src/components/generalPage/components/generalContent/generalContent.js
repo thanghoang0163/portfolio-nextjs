@@ -1,8 +1,9 @@
 import "./generalContent.css";
+import clsx from "clsx";
 
-export default function GeneralContent({ title, children }) {
+export default function GeneralContent({ title, children, className }) {
   return (
-    <div className="general-content">
+    <div className={clsx("general-content", className)}>
       <div className="general-content__header">
         <span className="general-content__title">{title}</span>
         <div className="general-content__line"></div>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import clsx from "clsx";
 import Image from "~/components/image/image";
 import Button from "~/components/button/button";
 import Category from "~/components/category/category";
@@ -13,13 +14,24 @@ import BeatriceWambui from "~/assets/images/beatrice-wambui.png";
 import "./generalPage.css";
 
 export default function GeneralPage({ title, children }) {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [theme, setTheme] = useState();
 
-  const handleChangeTheme = () =>
-    isLightTheme ? setIsLightTheme(false) : setIsLightTheme(true);
+  const handleChangeTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      setTheme("light");
+      localStorage.setItem("theme", "light");
+    }
+  };
+
+  useEffect(() => {
+    setTheme(localStorage.getItem("theme"));
+  }, []);
 
   return (
-    <main className="general-page">
+    <main className={clsx("general-page", theme, "dark:bg-slate-800")}>
       <div className="general-page__header">
         <Image
           className="general-page__image"
@@ -28,7 +40,7 @@ export default function GeneralPage({ title, children }) {
           priority={true}
         />
         <Button className="general-page__theme-btn" onClick={handleChangeTheme}>
-          {isLightTheme ? (
+          {theme === "light" ? (
             <FontAwesomeIcon
               className="general-page__theme-icon"
               icon={faMoon}
