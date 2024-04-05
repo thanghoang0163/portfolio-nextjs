@@ -31,8 +31,10 @@ export default function GeneralPage({ title, children }) {
   }, []);
 
   return (
-    <main className={clsx("general-page", theme, "dark:bg-slate-800")}>
-      <div className="general-page__header">
+    <main
+      className={clsx("general-page bg-dark-white", theme, "dark:bg-slate-800")}
+    >
+      <div className="general-page__header" data-aos="fade-down">
         <Image
           className="general-page__image"
           src={BeatriceWambui}
@@ -54,7 +56,7 @@ export default function GeneralPage({ title, children }) {
         </Button>
       </div>
       <div className="general-page__content">
-        <Category />
+        <Category aos="zoom-in" />
         <div className="general-page__detail">
           <LeftSide />
           <GeneralContent title={title}>{children}</GeneralContent>

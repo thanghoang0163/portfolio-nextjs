@@ -7,7 +7,7 @@ import "./leftSide.css";
 
 export default function LeftSide() {
   return (
-    <div className="left-side">
+    <div className="left-side" data-aos="fade-right">
       <Image className="left-side__avatar" src={Avatar} alt="Avatar" />
       <div className="left-side__text-container">
         <span className="left-side__name">Hoang Anh Thang</span>

@@ -2,7 +2,7 @@
 
 @layer components {
   .general-page {
-    @apply bg-dark-white p-16;
+    @apply p-16;
   }
 
   .general-page__header {

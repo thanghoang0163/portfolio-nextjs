@@ -8,11 +8,11 @@ import { categories } from "./index";
 
 import "./category.css";
 
-export default function Category() {
+export default function Category({ aos }) {
   const pathName = usePathname();
 
   return (
-    <ul className="category">
+    <ul className="category" data-aos={aos}>
       {categories.map((category, index) => {
         return (
           <Link
