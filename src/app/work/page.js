@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "~/components/image/image";
 import GeneralPage from "~/components/generalPage/generalPage";
 import Category from "./category/category";

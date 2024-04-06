@@ -27,7 +27,7 @@ export default function GeneralPage({ title, children }) {
   };
 
   useEffect(() => {
-    setTheme(localStorage.getItem("theme"));
+    setTheme(localStorage.getItem("theme") || "light");
   }, []);
 
   return (
