@@ -16,24 +16,48 @@ import "./generalPage.css";
 export default function GeneralPage({ title, children }) {
   const [theme, setTheme] = useState();
 
+  const htmlElementClassList = () => document.documentElement.classList;
+
+  const setDarkTheme = () => {
+    localStorage.setItem("theme", "dark");
+    htmlElementClassList().add("dark");
+  };
+
+  const setLightTheme = () => {
+    localStorage.setItem("theme", "light");
+    htmlElementClassList().remove("dark");
+  };
+
   const handleChangeTheme = () => {
     if (theme === "light") {
       setTheme("dark");
-      localStorage.setItem("theme", "dark");
+      setDarkTheme();
     } else {
       setTheme("light");
-      localStorage.setItem("theme", "light");
+      setLightTheme();
     }
   };
 
   useEffect(() => {
-    setTheme(localStorage.getItem("theme") || "light");
+    if ("theme" in localStorage) {
+      if (localStorage.theme === "dark") {
+        setTheme("dark");
+        htmlElementClassList().add("dark");
+      } else {
+        setTheme("light");
+        htmlElementClassList().remove("dark");
+      }
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
+      setDarkTheme();
+    } else {
+      setTheme("light");
+      setLightTheme();
+    }
   }, []);
 
   return (
-    <main
-      className={clsx("general-page bg-dark-white", theme, "dark:bg-slate-800")}
-    >
+    <main className={clsx("general-page bg-dark-white", "dark:bg-slate-800")}>
       <div className="general-page__header" data-aos="fade-down">
         <Image
           className="general-page__image"
